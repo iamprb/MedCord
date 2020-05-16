@@ -14,15 +14,14 @@ class MainActivity : AppCompatActivity() {
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                Toast.makeText(this,"Home",(Toast.LENGTH_SHORT)).show()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
-                Toast.makeText(this,"Dashboard",(Toast.LENGTH_SHORT)).show()
+                Toast.makeText(this,getString(R.string.title_dashboard),(Toast.LENGTH_SHORT)).show()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                Toast.makeText(this,"notifications",(Toast.LENGTH_SHORT)).show()
+                Toast.makeText(this,getString(R.string.title_notifications),(Toast.LENGTH_SHORT)).show()
                 return@OnNavigationItemSelectedListener true
             }
         }
