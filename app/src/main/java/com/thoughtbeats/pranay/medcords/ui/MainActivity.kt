@@ -1,12 +1,11 @@
-package com.thoughtbeats.pranay.medcords
+package com.thoughtbeats.pranay.medcords.ui
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v7.app.AppCompatActivity
-import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.thoughtbeats.pranay.medcords.R
 import kotlinx.android.synthetic.main.activity_main.*
-import android.content.Intent
 import com.thoughtbeats.pranay.medcords.extensions.addFragment
 
 
@@ -34,6 +33,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         nav_view.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
-        addFragment(HomeFragment(),R.id.container)
+        addFragment(HomeFragment(), R.id.container)
     }
 }
